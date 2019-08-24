@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_universal"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="#007EC2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbarcart"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:text="Checkout"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_weight="9"
+    android:layout_height="match_parent"
+    android:id="@+id/cart_rv">
+</android.support.v7.widget.RecyclerView>
+
+<android.support.design.widget.BottomNavigationView
+    android:padding="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_checkout"
+        android:text="checkout"
+        style="@style/btn"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/total_amt"
+            android:layout_width="250dp"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btn_checkout"
+            android:hint="amt"
+            android:textColor="#0b98e4"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.design.widget.BottomNavigationView>
+
+
+
+</LinearLayout>

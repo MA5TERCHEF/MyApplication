@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_universal">
+<android.support.v7.widget.Toolbar
+    android:background="#007EC2"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:id="@+id/toolbar2"
+    android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="Product Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/product_details_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar2" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/product_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_details_image"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+    <TextView
+        android:text="Orignal Price:"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_below="@+id/product_details_name"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Discount Price:"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_below="@+id/product_details_amount"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/product_details_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/product_details_name"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/product_details_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/product_details_amount"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+        <ScrollView
+            android:padding="10dp"
+            android:layout_below="@+id/product_details_discount"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+        <TextView
+            android:id="@+id/product_details_descrip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/product_details_discount"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="25sp" />
+        </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNavigationView">
+
+        <Button
+            android:id="@+id/btn_cart"
+            android:layout_marginStart="10dp"
+            style="@style/btn"
+            android:layout_width="100sp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="Add to Cart" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:text="Quantity:"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/cart_spin"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250dp"></Spinner>
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

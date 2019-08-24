@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_universal"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:background="#007EC2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbarreview"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:text="Review Your Purchase"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_below="@id/toolbarreview"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/review_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/review_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"/>
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/review_image"
+        android:id="@+id/review_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/review_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"/>
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/review_name"
+        android:id="@+id/review_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/review_cat"
+        android:id="@+id/review_scroll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_universal"
+        android:layout_width="390dp"
+        android:layout_height="150sp">
+    <EditText
+        android:hint="Type Your Review Here"
+        android:id="@+id/review_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </ScrollView>
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/review_scroll"
+        android:id="@+id/review_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/review_rating"
+        android:text="Submit"
+        style="@style/btn"
+        android:id="@+id/review_submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

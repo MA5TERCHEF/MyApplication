@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pc Store</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_activity_list">List</string>
+    <string name="title_activity_dash">DashActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

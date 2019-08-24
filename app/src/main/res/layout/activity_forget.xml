@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_universal">
+    <android.support.v7.widget.Toolbar
+        android:background="#007EC2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbarforgot"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:text="Password Reset"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:hint="Enter Your Email Address"
+        android:id="@+id/forgotemail"
+        android:layout_centerInParent="true"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/forgotbtn"
+        style="@style/btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotemail"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+</RelativeLayout>

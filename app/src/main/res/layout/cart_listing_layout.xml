@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#0997e4"
+        android:elevation="20dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cart_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/cart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cart_img"
+        android:text="name"
+        android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/cart_amt_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart_name"
+                android:layout_toEndOf="@+id/cart_img"
+                />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/cart_amt"
+        android:textSize="25dp"
+        android:layout_below="@id/cart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cart_amt_text"
+        android:text="amt" />
+
+            <TextView
+                android:id="@+id/cart_qty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:layout_above="@id/cart_remove"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/cart_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/cart_remove"
+        android:layout_marginBottom="10dp"
+        android:text="qty"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/cart_remove"
+        android:textColor="#e41111"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cart_qty"
+        android:layout_below="@+id/cart_amt"
+        android:text="REMOVE ITEM" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

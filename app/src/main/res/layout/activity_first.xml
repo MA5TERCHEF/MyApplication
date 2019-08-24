@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_blue_computer_icon"/>
+
+    <TextView
+        android:layout_below="@+id/first"
+        android:id="@+id/txtfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pc Store"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textColor="#00bbff"/>
+</RelativeLayout>

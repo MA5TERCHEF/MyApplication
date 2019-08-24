@@ -1,0 +1,23 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="40sp"
+        android:id="@+id/history_none"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:textColor="#0997e4"
+        android:text="No Items Found"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+<android.support.v7.widget.RecyclerView
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/history_rv">
+
+</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
